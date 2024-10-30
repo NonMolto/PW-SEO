@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de um componente curricular">
+    <meta name="author" content="Gabriel Almeida e Gabriel Crispim">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <title>1ºDS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .info {
+          display: none;
+      }
+      .accordion-body img {
+          max-width: 100%;
+          height: auto;
+          max-height: 100%;
+      }
+  </style>
+</head>
+<!-- Criadores Gabriel Almeida Nogueira  e Gabriel da Silva Crispim -->
+  <body>
+    <form action="Cursos">
+      <header>
+      <h1><em>Componentes do curso de Desenvolvimento de sistemas</em></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="semestre1">1º Semestre</a></li>
+      </ul>
+    </nav>  
+    <main>
+      <section id="semestre1">
+      <div class="item">LPL</div>
+      <div class="item">LIC</div>
+      <div class="item">ING</div>
+      <div class="item">Arte</div>
+      <div class="item">APS</div>
+      <div class="item">BD</div>
+      <div class="item">DD</div>
+      <div class="item">EACNT</div>
+      <div class="item">EAMT</div>
+      <div class="item">EMP</div>
+      <div class="item">FIS</div>
+      <div class="item">FI</div>
+      <div class="item">EDF</div>
+      <div class="item">PWEB</div>
+      <div class="item">HIST</div>
+      <div class="item">TPA</div>
+      <div class="item">QUIM</div>
+      <div class="item">MAT</div>
+      </section>
+    </main>
+    <div class="info-container">
+      <div class="info" id="LPL-info"><h2>Informações sobre LPL:</h2>
+        <img src="img/LPL.png" alt="Imagem de LPL">
+        <h4>Este componente, definitivamente é o que se mais se ofusca perante os outros; LPL aborda a língua portuguesa e a literatura, explorando aspectos gramaticais, literários e linguísticos essenciais para a formação cultural e comunicativa dos alunos.</h4>
+        <h3>Profº Fidelis</h3>
+      </div>
+      <div class="info" id="LIC-info"><h2>Informações sobre LIC:</h2>
+        <img src="img/LIC.png" alt="Imagem de LIC">
+        <h4>Subjetivamente me comunicando, posso afirmar que esse componente é um tanto quanto distinto mas nem tanto, nele nos aprofundamos em conceitos que antes fomos apresentados em <strong>LPL</strong>; Em si, LIC proporciona aos alunos a oportunidade de realizar experimentos práticos, desenvolvendo habilidades de investigação científica, análise de dados e elaboração de relatórios técnicos.</h4>  
+        <h3>Profº Fidelis</h3>
+      </div>
+      <div class="info" id="ING-info"><h2>Informações sobre ING:</h2>
+        <img src="img/ING.jpeg" alt="Imagem de ING">
+        <h4>A língua inglesa foi e é a língua que mais alcançou território no mundo e, é isso que estudamos (pode se dizer): ING é dedicado ao estudo da língua inglesa, focando na comunicação oral e escrita, compreensão auditiva e leitura, preparando-nos para interações globais e profissionais. Em si, isso traz a oportunidade de termos a nosssa visão amplianda, pois por meio do inglês, podemos ter a ciência de povos, culturas e conceitos que já existiam antes mesmos de existirmos. </h4>
+        <h3>Profº Fidelis</h3>
+      </div>
+      <div class="info" id="Arte-info"><h2>Informações sobre Arte:</h2>
+        <img src="img/Arte.png" alt="Imagem de Arte">
+        <h4>Aqui viajamos pelo que vemos que antes vem do que apenas um indivíduo vê em sua mente e, que nos faz ver isso através da expressão artistíca. A Arte teve seu início nos primórdios da Grécia Antiga e se estende até a Idade Comteporânea; Arte explora conceitos fundamentais de expressão visual e criatividade, abrangendo técnicas de desenho, pintura, escultura e história da arte para enriquecer a percepção estética dos alunos ou dos interessados nessa ciência, afinal a aquisição de conhecimento não está limitada a uma estrutura em que "alunos" se mantenham lá por 8 horas, as vezes como Da Vinci, que tinha bipolaridade no quesito de querer estudar, as vezes a vontade de estudar é imensa no dia, porém no outro ela desmancha como a areia quando esfregada pelas e nas mãos de alguém.</h4>
+        <h3>Profª Adriana</h3>
+      </div>
+      <div class="info" id="APS-info"><h2>Informações sobre APS:</h2>
+        <img src="img/APS.png" alt="Imagem de APS">
+        <h4>Neste componente, somos apresentados a conceitos que envolvem a análise e o desenvolvimento de projetos e sistemas, que é como os meus colegas e como todos nós, ninguém começa grande semelhante como um incêndio, ele nunca começa grande, nem a nossa própria ciência.</h4>
+        <h3>Profº Elisângela</h3>
+      </div>
+      <div class="info" id="BD-info"><h2>Informações sobre BD:</h2>
+        <img src="img/BD.png" alt="Imagem de BD">
+        <h4> Suas responsabilidades incluem aplicar rotinas de segurança, realizar cópias e restaurações de dados, prestar suporte aos usuários, auxiliar no desenvolvimento de aplicações com acesso a banco de dados e conduzir análises de dados. Ele trabalha em equipe, tanto presencialmente quanto à distância, em um ambiente multidisciplinar.</h4>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <img src="img/Diagrama1.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <img src="img/Diagrama2.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <img src="img/Diagrama3.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>  
+        <h3>Profº Iury</h3>
+      </div>
+      <div class="info" id="DD-info"><h2>Informações sobre DD:</h2>
+        <img src="img/DD.png" alt="Imagem de DD">
+        <h4>Curso prático de design gráfico focado no domínio dos softwares da Adobe, Tipografia e Branding. Os participantes desenvolvem habilidades por meio de aulas e projetos práticos desde o início, treinando para uma talvez futura carreira.</h4>
+        <h3>Profº Iury</h3>
+      </div>
+      <div class="info" id="EACNT-info"><h2>Informações sobre EACNT:</h2>
+        <img src="img/EACNT.png" alt="Imagem de EACNT">
+        <h4>EACNT (Está mais para biologia, o que talvez faça sentido já que a biologia trata da vida e a vida é natural) aprofunda o conhecimento em ciências naturais, abordando temas como biologia (no momento é o que está se passando e é o que está aparentemente mais concatenado a EACNT), química, física e suas aplicações tecnológicas, preparando os alunos para desafios científicos contemporâneos, como por exemplo a saúde do corpo e da mente, o que envolve em parte uma alimentação saudável, a biotecnologia que envolve o manuseio, transformação, alteração, elaboração e aplicação da tecnologia na biologia, no corpo humano como por exemplo nano-robôs que atuariam dentro do corpo de modo que ele possa agir dentro do corpo humano de forma delicada, o que é essencial para a medicina já que isso envolve a vida, a biologia, como também ser amado, se sentir amado e saber que você é amado faz a sua vida ter mais esperança e felicidade. </h4>
+        <h3>Profª Patrícia</h3>
+      </div>
+      <div class="info" id="EAMT-info"><h2>Informações sobre EAMT:</h2>
+        <img src="img/EAMT.png" alt="Imagem de EAMT">
+        <h4>Este componente abrange o estudo avançado de conceitos matemáticos aplicados à tecnologia. Inclui análise de funções afins, lineares e angulares, essenciais para modelagem matemática e solução de problemas práticos. Nós, os alunos, exploramos aplicações desses conceitos em contextos tecnológicos contemporâneos. Ultimamente estudamos a função afim, angular e linear, recentemente fomos apresentados a isso,</h4>
+        <h3>Profº William F.</h3>
+      </div>
+      <div class="info" id="EMP-info"><h2>Informações sobre EMP:</h2>
+        <img src="img/EMP.png" alt="Imagem de EMP">
+        <h4>Atualmente estamos fazendo investimentos em relação ao desenvolvimento de uma empresa, inicialmente apenas uma ideia, porém está progredindo para algo mais concreto. Este componente aborda os princípios fundamentais do empreendedorismo, incluindo planejamento estratégico, análise de mercado, gestão financeira e aspectos legais relacionados à criação e operação de um negócio, em si para termos esse tipo de ambiente(atmosfera), precisamos faze-lo, é como John Watson mesmo disse: <em class="light">"O que nós somos é o que fazemos, e o que fazemos é o que o ambiente nos faz fazer"</em> </h4>
+        <h3>Profº Danilo</h3>
+      </div>
+      <div class="info" id="FIS-info"><h2>Informações sobre FIS:</h2>
+        <img src="img/FIS.png" alt="Imagem de FIS">
+        <h4>A Física foca na observação e compreensão dos fenômenos naturais através da aplicação de teorias e modelos físicos. Os estudantes exploram desde mecânica clássica até fenômenos modernos como a física quântica e relatividade, preparando-os para análises críticas e resolução de problemas complexos. De semelhante modo com a de que por meio de uma pergunta surge mais uma pergunta e outra pergunta, por meio da observação dos filósofos antigos, surgiu o método científico.</h4>
+        <h3>Profº Zé</h3>
+      </div>
+      <div class="info" id="FI-info"><h2>Informações sobre FI:</h2>
+        <img src="img/FI.png" alt="Imagem de FI">
+        <h4>Fundamentos da informática explora os pilares teóricos e práticos da informática, abrangendo desde a história da computação até as tecnologias emergentes. Nós aprendemos conceitos essenciais como estruturas de dados, algoritmos, sistemas operacionais e redes, essenciais para o desenvolvimento de software e a compreensão do funcionamento dos sistemas computacionais modernos. Um passado inicialmente remoto porém no futuro turbulento, semelhante a guerra pois com o estopim do Henrique tudo se deu como fileira de dominós ordenados em sequência, por causa da queda de um, os demais de mesmo modo, como a chuva cai, precederam à queda, como um efeito dominó(Just my thoughts)</h4>
+        <h3>Profª Elisângela (<em>Henrique <strong>F</strong></em>)</h3>
+      </div>
+      <div class="info" id="EDF-info"><h2>Informações sobre ED. F.:</h2>
+        <img src="img/EDF.png" alt="Imagem de EDF">
+        <h4>Em educação física visa o desenvolvimento físico e motor dos alunos, explorando desde atividades esportivas tradicionais até a importância da atividade física para a saúde e o bem-estar. A disciplina incentiva hábitos saudáveis e promove a participação em atividades físicas como parte essencial da formação integral dos estudantes. A séries no passado, nossa resistência abdominal foi provada, em um exercício (de certa forma) <span style="color: purple;">brutal</span>, pois nem tudo se concatena à teoria, em si, como poderia alguém tocar algum instrumental musical sem nunca ter <strong>tocado</strong> nele anteriormente e se baseado apenas na teoria? Ora, poderia ser inerente teoria à prática? Ora, poderia eu ser ético sem nunca ter praticado a ética? Talvez sim, talvez não.</h4>
+        <h3>Profº Thiago</h3>
+      </div>
+      <div class="info" id="PWEB-info"><h2>Informações sobre P. WEB:</h2>
+        <img src="img/PWEB.png" alt="Imagem de PWEB">
+        <h4>Programação web está dedicada ao estudo e prática do desenvolvimento web, cobrindo desde linguagens de marcação como HTML e CSS até linguagens de programação dinâmica como JavaScript. É disponibilizado para nós aprenderem a criar websites interativos, compreender fundamentos de design responsivo e utilizar frameworks e bibliotecas comteporâneas para construir aplicações web concisas. Basicamente isso é está experiência, uma experiência que nos permite viajar pela nossa capacidade na elaboração de um site, que <em>(creio eu)</em> nos dar a oportunidade de enfrentar e viajar pela <span style="color: rgb(122, 146, 146);"><em>qualia</em></span> da nossa mente, por meio de uma expressão estética e artistíca, através desta experiência.</h4>
+        <!-- SEO -->
+        <hr>
+        <h3>SEO (Search Engine Optimization)</h3>
+        <p>
+          <strong>SEO (Search Engine Optimization)</strong> é um conjunto de práticas que visam melhorar a visibilidade do site nos motores de busca, aumentando o tráfego orgânico sem depender de anúncios pagos. Os principais pilares do SEO incluem:
+        </p>
+            <ul>
+                <li><strong>SEO Técnico:</strong> envolve otimizações na estrutura do site e na indexação para facilitar o rastreamento pelos buscadores.</li>
+                <li><strong>SEO On-Page:</strong> foca no conteúdo e experiência do usuário, alinhando o site com a intenção de busca do usuário.</li>
+                <li><strong>SEO Off-Page:</strong> busca conquistar backlinks e menções de outros sites, utilizando técnicas como o <span style="color:rgb(0, 119, 255)">Data-Driven PR</span> e <span style="color: rgb(0, 119, 255)">link building</span>.</li>
+            </ul>
+        <p>
+           Implementar técnicas de SEO adequadas pode aumentar significativamente o alcance e a visibilidade de um site, promovendo uma melhor interação com o público e elevando a relevância do conteúdo na web.
+        </p>
+        <h4>Profº William</h4>
+      </div>
+      <div class="info" id="HIST-info"><h2>Informações sobre HIST:</h2>
+        <img src="img/HIST.png" alt="Imagem de HIST">
+        <h4>O ramo da história explora os eventos e processos que moldaram a civilização humana ao longo do tempo. Desde os primeiros vestígios da humanidade até os eventos contemporâneos, os estudantes investigam diferentes períodos históricos, movimentos culturais e políticos, entendendo como o passado influencia o presente e pode moldar o futuro. Antigamente, viajamos pelos conhecimentos passados da história da civilização humana e o apresentamos de modo que fomos julgados e avaliados mediante o pensamento de quem compartilha conhecimento para nós, e conseguimos conquistá-lo mesmo que tivemos ciência de que aquele tinha pouca expectativa em nós, porém mesmo de ter conseguido a menção máxima, ainda assim, parecia como se não tivessemos ganhado nada, apenas uma reflexão sobre o nosso método de organização, mas é como <em>Sócrates</em> tinha dito: <em class="light">"Uma vida não refletida não vale a pena ser vivida"</em>.</h4>
+        <h3>Profª <em>Tâmara</em></h3>
+      </div>
+      <div class="info" id="TPA-info"><h2>Informações sobre TPA:</h2>
+        <img src="img/TPA.png" alt="Imagem de TPA">
+        <h4>TPA || Técnicas de programação e algoritmo, foca no ensino de técnicas avançadas de programação e algoritmos. Estamos aprendendo a resolver problemas complexos utilizando estruturas de dados, algoritmos de busca e ordenação, além de explorar técnicas de otimização e boas práticas de desenvolvimento de software, resolvendo problemas principalmente em JavaScript, esse é praticamente o componente mais inerente para o <em class="light">DS</em> ele é um dos componentes que mais traz felicidade para nós pois estamos fazendo o que tanto almejamos durante todas as 32 horas fora de casa quando vamos a <span style="color: brown;">Etec</span>, mas isso se baseia na paciência do que almejamos como <em>Santo Agostinho</em> disse: <span class="light">"A paciência tudo alcança."</span></h4>
+        <h3>Profª Elisângela</h3>
+        <br>
+        <div class="any">
+          <ul>
+            <li><a href="Lista4-1.html">Exercício 1</a></li>
+            <li><a href="Lista4-2.html">Exercício 2</a></li>
+            <li><a href="Lista4-3.html">Exercício 3</a></li>
+            <li><a href="Lista4-4.html">Exercício 4</a></li>
+            <li><a href="Lista4-5.html">Exercício 5</a></li>
+            <li><a href="Lista4-6.html">Exercício 6</a></li>
+            <li><a href="Lista4-7.html">Exercício 7</a></li>
+          </ul>
+          </div>
+      </div>
+      </div>
+      <div class="info" id="QUIM-info"><h2>Informações sobre QUIM:</h2>
+        <img src="img/QUIM.png" alt="Imagem de QUIM">
+        <h4>Em Química, exploramos os segredos ocultos da matéria, desde a estrutura atômica até a complexidade dos compostos orgânicos e inorgânicos. Como alquimistas modernos, desvendamos fórmulas mágicas que regem reações químicas, transformando elementos simples em soluções para a saúde, indústria e nosso ambiente. Nesse universo infinitesimal, além do átomo, desvendamos os mistérios dos quarks e léptons, que é como <em>Constanze Mozart</em> isse: <span class="light">"Dançar é como sonhar com os pés."</span>, são (de certa maneira) verdadeiros artífices da dança molecular.</h4>
+        <h3>Profº Zé</h3>
+      </div>
+      <div class="info" id="MAT-info"><h2>Informações sobre MAT:</h2>
+        <img src="img/MAT.png" alt="Imagem de MAT">
+        <h4> Na querida Matemática, exploramos os conceitos matemáticos essenciais para a formação em desenvolvimento de sistemas. Desde a álgebra básica até o cálculo diferencial e integral (desenvolvido por Gottfried Leibniz e Isaac Newton), aplicamos esses conhecimentos na modelagem matemática de problemas reais e na resolução de questões complexas dentro da computação e áreas relacionadas. Atualmente, emergimos nossos saberes nos conjuntos matemáticos. A matemática, como uma musa inspiradora, nos leva a explorar aspectos aparentemente simples, mas profundos. Entender que 10/2 igual a 5 não apenas confirma o resultado, mas revela a beleza e a lógica por trás de cada passo, como descobrir que, além do resultado final, existem nuances que revelam um universo de possibilidades.</h4>
+        <h3>Profº <em>Lindo</em></h3>
+      </div>
+    </div>
+    </form>
+    <footer>
+      <p>Etec&trade; </p>
+    </footer>
+    <script src="PW.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+ </body>
+</html>
