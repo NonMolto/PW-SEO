@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista4-5 | Gabriel Almeida </title>
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient( 270deg, rgba(0, 0, 0, 0.267),  rgb(41, 21, 110));
+            padding: 20px;
+        }
+        .result {
+            background: linear-gradient(270deg, #bbb1b1,#fffcfc) ;
+            border: 10px solid #bbb1b1;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        .h1 {
+            margin-top: 0;
+        }
+ </style>
+</head>
+<body>
+    <center>
+    <h1>Validação de números primos do 1 ao 100</h1>
+</center>
+    <div class="result">
+    <script>
+function verificação(n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 === 0 || n % 3 === 0) return false;
+    for (let i = 5; i * i <= n; i += 6) {
+        if (n % i === 0 || n % (i + 2) === 0) return false;
+    }
+    return true;
+}
+function Limite(limit) {
+    for (let i = 2; i <= limit; i++) {
+        if (verificação(i)) {
+            document.write(i + ",");
+        }
+    }
+}
+Limite(100);
+   </script>
+   </div>
+</body>
+</html>

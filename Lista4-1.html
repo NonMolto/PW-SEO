@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista4-1 | Gabriel Almeida</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient( 270deg, rgba(0, 0, 0, 0.267),  rgb(41, 21, 110));
+            padding: 20px;
+        }
+        .result {
+            background: linear-gradient(270deg, #bbb1b1,#fffcfc) ;
+            border: 10px solid #bbb1b1;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .n {
+            font-size: 16px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+    </style>
+</head>
+  <body>
+    <div class="result">
+      <h2>Números Ímpares de 1 a 249:</h2>
+      <div class="n">
+          <script>
+              let n = "";
+              for (let i = 1; i <= 249; i += 2) {
+                  n += i + ", ";
+              }
+              document.write(n);
+          </script>
+      </div>
+  </div>
+</body>
+</html>

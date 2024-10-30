@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista4-4: | Gabriel Almeida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient( 270deg, rgba(0, 0, 0, 0.267),  rgb(41, 21, 110));
+            padding: 20px;
+        }
+        .result {
+            background: linear-gradient(270deg, #bbb1b1,#fffcfc) ;
+            border: 10px solid #bbb1b1;
+            padding: 10px;
+            border-right: 100px;
+            margin-bottom: 10px;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        .h1 {
+            margin-top: 0;
+        }
+     </style>
+</head>
+<body>
+    <h1>Registro de dados</h1>
+    <div class="result">
+    <script>           
+function calcularAumento(salario) {
+    if (salario <= 2500) {
+        return salario * 1.10; 
+    } else {
+        return salario * 1.08; 
+    }
+}
+function aplicarAumento() {
+    let quantidadeFuncionarios = parseInt(prompt("Digite a quantidade de funcionários:"));
+    for (let i = 1; i <= quantidadeFuncionarios; i++) {
+        let salario = parseFloat(prompt("Digite o salário do funcionário " + i + ":"));
+        let salarioComAumento = calcularAumento(salario);
+        document.write( "<br>" + "Salário do funcionário " + i + " com aumento: R$" + salarioComAumento.toFixed(2)) ;
+    }
+}
+aplicarAumento();
+
+    </script>
+    </div>
+</body>
+</html>

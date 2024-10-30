@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista4-7 | Gabriel Almeida</title>
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient( 270deg, rgba(0, 0, 0, 0.267),  rgb(41, 21, 110));
+            padding: 20px;
+        }
+        .result {
+            background: linear-gradient(270deg, #bbb1b1,#fffcfc) ;
+            border: 10px solid #bbb1b1;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        .h1 {
+            margin-top: 0;
+        }
+     </style>
+</head>
+<body>
+    <h1><strong>Menções</strong></h1>
+    <div class="result">
+    <script>
+function contarMencoes() {
+    let mencaoMB = 0;
+    let mencaoI = 0;
+    for (let i = 1; i <= 10; i++) {
+        let nome = prompt("Digite o nome do aluno " + i + ":");
+        let mencaoFinal = prompt("Digite a menção final (MB, B, R ou I) do aluno " + i + ":").toUpperCase();
+        if (mencaoFinal === "MB") {
+            mencaoMB++;
+        } else if (mencaoFinal === "I") {
+            mencaoI++;
+        }
+    }
+    document.write("Número de alunos com menção MB: " + mencaoMB +"<br>");
+    document.write("Número de alunos com menção I: " + mencaoI);
+}   
+contarMencoes();
+
+    </script>
+    </div>
+</body>
+</html>

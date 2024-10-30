@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista4-2 | Gabriel Almeida</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient( 270deg, rgba(0, 0, 0, 0.267),  rgb(41, 21, 110));
+            padding: 20px;
+        }
+        .result {
+            background: linear-gradient(270deg, #bbb1b1,#fffcfc) ;
+            border: 10px solid #bbb1b1;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+  <body>
+    <h1>Verificação de vetores geométricos</h1>
+    <div class="result">
+    <script>
+
+function Triangulo(a, b, c) {
+    return a + b > c && b + c > a && a + c > b;
+}
+function tipoTriangulo(a, b, c) {
+    if (Triangulo(a, b, c)) {
+        return "Isso não é um triângulo.";
+    } else if (a === b && b === c) {
+        return "Equilátero";
+    } else if (a === b || b === c || a === c) {
+        return "Isósceles";
+    } else {
+        return "Escaleno";
+    }
+}
+function verificarTriangulos() {
+    for (let i = 1; i <= 5; i++) {
+        let a = parseFloat(prompt("Digite o lado A do triângulo " + i));
+        let b = parseFloat(prompt("Digite o lado B do triângulo " + i));
+        let c = parseFloat(prompt("Digite o lado C do triângulo " + i));
+        let tipo = tipoTriangulo(a, b, c);
+        document.write("Triângulo " + i + ": " + tipo +"<br>");
+    }
+}
+verificarTriangulos();
+
+    </script>
+    </div>
+  </body>
+</html>

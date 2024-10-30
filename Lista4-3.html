@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista4-3: | Gabriel Almeida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient( 270deg, rgba(0, 0, 0, 0.267),  rgb(41, 21, 110));
+            padding: 20px;
+        }
+        .result {
+            background: linear-gradient(270deg, #bbb1b1,#fffcfc) ;
+            border: 10px solid #bbb1b1;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            margin: 0 auto;
+        }
+     </style>
+</head>
+  <body>
+    <h1>Cálculo fatorial</h1>
+    <div class="result">
+      <script>
+function calcularFatorial(numero) {
+    if (numero === 0 || numero === 1) {
+        return 1;
+    } else {
+        let resultado = 1;
+        for (let i = 2; i <= numero; i++) {
+            resultado *= i;
+        }
+        return resultado;
+    }
+}
+let numero = parseInt(prompt("Digite um número para calcular o fatorial:"));
+if (numero < 0) {
+    document.write("Não é possível calcular o fatorial de um número negativo.");
+} else {
+    let fatorial = calcularFatorial(numero);
+    document.write("O fatorial de " + numero + " é: " + fatorial);
+}   
+      </script>
+      </div>
+  </body>
+</html>
